@@ -1,0 +1,23 @@
+[1]
+- Before 사진 : 1_before.jpg
+- After 사진 : 1_after.jpg
+- 작성자 아이디 : user1
+- 평점 : 4
+
+[2]
+- Before 사진 : 2_before.jpg
+- After 사진 : 2_after.jpg
+- 작성자 아이디 : user2
+- 평점 : 3
+
+[3]
+- Before 사진 : 3_before.jpg
+- After 사진 : 3_after.jpg
+- 작성자 아이디 : user3
+- 평점 : 5
+
+[4]
+- Before 사진 : 4_before.jpg
+- After 사진 : 4_after.jpg
+- 작성자 아이디 : user4
+- 평점 : 2
