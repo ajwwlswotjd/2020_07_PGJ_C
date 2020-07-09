@@ -69,7 +69,7 @@
 			우리 모두가 함께하는
 			<span>온라인 집들이</span>
 		</h1>
-		<div class="more-link"><a href="#">더보기</i></a></div>
+		<div class="more-link"><a href="/warm">더보기</i></a></div>
 		<div class="warm-list">
 			<div class="div-wrapper">
 				<div class="warm-item">
@@ -159,7 +159,7 @@
 
 	<section id="exp">
 		<h1 class="exp-title">전문가</h1>
-		<div class="more-link"><a href="#">더보기</i></a></div>
+		<div class="more-link"><a href="/expert">더보기</i></a></div>
 		<div class="exp-list">
 			<div class="div-wrapper">
 				<div class="exp-item">
@@ -173,7 +173,7 @@
 								<p class="exp-name">전문가1</p>
 								<hr class="exp-item-line">
 								<div class="exp-id">specialist1</div>
-								<a href="#" class="exp-more">더보기</a>
+								<a href="/expert" class="exp-more">더보기</a>
 							</div>
 						</div>
 					</div>
@@ -190,7 +190,7 @@
 								<p class="exp-name">전문가2</p>
 								<hr class="exp-item-line">
 								<div class="exp-id">specialist2</div>
-								<a href="#" class="exp-more">더보기</a>
+								<a href="/expert" class="exp-more">더보기</a>
 							</div>
 						</div>
 					</div>
@@ -207,7 +207,7 @@
 								<p class="exp-name">전문가3</p>
 								<hr class="exp-item-line">
 								<div class="exp-id">specialist3</div>
-								<a href="#" class="exp-more">더보기</a>
+								<a href="/expert" class="exp-more">더보기</a>
 							</div>
 						</div>
 					</div>
@@ -224,7 +224,7 @@
 								<p class="exp-name">전문가4</p>
 								<hr class="exp-item-line">
 								<div class="exp-id">specialist4</div>
-								<a href="#" class="exp-more">더보기</a>
+								<a href="/expert" class="exp-more">더보기</a>
 							</div>
 						</div>
 					</div>

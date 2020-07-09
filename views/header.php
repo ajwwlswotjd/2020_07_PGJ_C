@@ -64,7 +64,7 @@
 				<li><a href="/">홈</a></li>
 				<li><a href="/warm">온라인 집들이</a></li>
 				<li><a href="#">스토어</a></li>
-				<li><a href="#">전문가</a></li>
+				<li><a href="/expert">전문가</a></li>
 				<li><a href="#">시공 후기</a></li>
 			</nav>
 
