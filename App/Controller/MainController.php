@@ -93,6 +93,10 @@ class MainController extends MasterController {
 
 	public function expert()
 	{
+		if(!__SIGN){
+			DB::msgAndGo("로그인해 주세요.","/");
+			exit;
+		}
 		$sql = 'SELECT * FROM `user` WHERE `level` = 1';
 		$expList = DB::fetchAll($sql,[]);
 		$sql = "SELECT * FROM `exp_review` ORDER BY `idx` DESC";
@@ -108,5 +112,36 @@ class MainController extends MasterController {
 		$result = DB::query($sql,[$idx,$user_idx,$pay,$content,$grade]);
 		echo "<script>location.href='/expert';</script>";
 		exit;
+	}
+
+	public function review()
+	{
+		if(!__SIGN){
+			DB::msgAndGo("로그인해 주세요.","/");
+			exit;
+		}
+
+		$sql = "SELECT * FROM `estimate` ORDER BY `idx` DESC";
+		$estList = DB::fetchAll($sql,[]);
+
+
+		$this->render("review",["estList"=>$estList]);
+	}
+
+	public function est_request()
+	{
+		extract($_POST);
+		$sql = "INSERT INTO `estimate`(`idx`, `date`, `content`, `writer`) VALUES (null,?,?,?)";
+		$user = $_SESSION['user']->idx;
+		$result = DB::query($sql,[$date,$content,$user]);
+		echo "<script>location.href='/review';</script>";
+	}
+
+	public function est_view()
+	{
+		extract($_POST);
+		$sql = "SELECT * FROM `est_res` WHERE `idx` = ?";
+		$list = DB::fetchAll($sql,[$idx]);
+		echo json_encode(["list"=>$list],JSON_UNESCAPED_UNICODE);
 	}
 }

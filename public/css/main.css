@@ -69,7 +69,7 @@
 
 #join-canvas {
 	position: relative;
-	top: 70px;
+	top: 60px;
 	border:1px solid #ddd;
 	border-radius: 5px;
 }
@@ -290,7 +290,7 @@
 	margin: 0 auto;
 	height: 70px;
 	overflow-y: auto;
-	border:1px solid #ddd;
+	/*border:1px solid #ddd;*/
 	padding: 3px;
 	top: 45px;
 	font-size: 13px;
@@ -691,8 +691,8 @@
 	width: 75%;height: 380px;
 	position: relative;
 	top: 80px;	
-	border-top: 2px solid #aaa;
-	border-bottom: 2px solid #aaa;
+	border-top: 2px solid #dfdfdf;
+	border-bottom: 2px solid #dfdfdf;
 	overflow-y: auto;
 	margin: 0 auto;
 }
@@ -729,4 +729,241 @@
 
 .er-table > tbody > tr:last-child > td {
 	border-bottom: none;
+}
+
+.est-request-list {
+	height: 500px;
+	top: 50px;
+}
+
+.est-list {
+	width: 80%;
+	position: relative;
+	background-color: #fff;
+	border:1px solid #ddd;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.est-list > h1 {
+	font-weight: lighter;
+	position: relative;
+	font-size: 25px;
+	left: 40px;
+	top: 40px;
+}
+
+.est-list > h1::after {
+	content: '';
+	width: 300px;
+	height: 2px;
+	background-color: #ddd;
+	margin-top: 5px;
+	display: block;
+}
+
+.est-table {
+	position: relative;
+	width: calc(100% - 60px);
+	margin: 0 auto;
+	height: 75%;
+	overflow-y: auto;
+}
+
+.est-table::-webkit-scrollbar {
+	display: none;
+}
+
+.est-table > table {
+	width: 100%;
+	position: relative;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+	border-spacing: 0;
+	padding: 0;
+	max-height: 100%;
+	position: relative;
+}
+
+.est-table > table > tbody > tr {
+	height: 60px;
+	border-bottom: 1px solid #ddd;
+}
+
+.est-table > table > tbody > tr > th {
+	padding: 0 !important;
+	font-weight: lighter;
+	height: 60px;
+	color: #333030;
+	border-bottom: 1px solid #bbb;
+}
+
+.est-table > table > tbody > tr:nth-child(2n+1) > td {
+	background-color: #f7f7f7;
+}
+
+.est-table > table > tbody > tr > td {
+	height: 60px;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	color: #555;
+}
+
+.est-request-btn {
+	width: 80%;
+	top: 70px;
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#est-request-btn {
+	padding: 10px 20px;
+	border:none;
+	border-radius: 5px;
+	background-color: #479ee5;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#est-request-btn:hover {
+	filter: brightness(105%);
+}
+
+.request-container {
+	width: 300px;
+	height: 350px;
+}
+
+.request-container > .div-wrapper > form {
+	width: 80%;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+#est-content {
+	position: relative;
+	top: 60px;
+	width: 100%;
+	height: 100px;
+	resize: none;
+	padding: 10px;
+	outline: none;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+}
+
+#est-submit {
+	width: 100%;
+	height: 40px;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	top: 80px;
+	border-radius: 2px;
+	border:none;
+	background-color: #479ee5;
+	color: #fff;
+}
+
+#est-submit:hover {filter: brightness(105%);}
+
+.request-popup {
+	display: none;
+}
+
+.est-table-btn > button {
+	width: 80px;height: 40px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 12px;
+	border:none;
+	color: #fff;
+}
+
+.est-table-btn > button:hover {
+	filter: brightness(105%);
+}
+
+.est-btn-send {
+	background-color: #479ee5;
+}
+
+.est-btn-view {
+	background-color: #ff5656;
+}
+
+.res-view-container {
+	width: 550px;
+	height: auto;
+	padding: 50px;
+	padding-bottom: 100px;
+}
+
+.res-view-table-box {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	top: 50px;
+	overflow-y: auto;
+	/*background-color: #ddd;*/
+}
+
+.res-view-table tr {
+	height: 50px;
+	width: 100%;
+}
+
+.res-view-table tr > th {
+	text-align: center;
+	font-weight: 500;
+	border-bottom: 1px solid #aaa;
+	font-size: 14px;
+}
+
+.res-view-table tr > td {
+	text-align: center;
+	border-bottom: 1px solid #dfdfdf;
+	color: #333030;
+	font-weight: lighter;
+	font-size: 13px;
+}
+
+.res-view-btn > button {
+	padding: 8px 16px;
+	background-color: #479ee5;
+	border:none;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 13px;
+	cursor: pointer;
+	outline: none;
+}
+.res-view-btn > button:hover {
+	filter: brightness(105%);
+}
+
+button {
+	outline: none;
+}
+
+
+.res-view-table-box::-webkit-scrollbar {
+	display: none;
+}
+
+.res-view-table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.res-view-popup {
+	display: none;
 }
